@@ -30,22 +30,26 @@ df = data('wage')
 # Fit a full wage model
 model = smf.ols('wage ~ educ + exper + tenure', data=df).fit()
 ```
-# 1.1 Example 1: Is educ Significant?
+1.1 Example 1: Is educ Significant?
+
 Null Hypothesis (H₀): β₁ = 0 (education has no effect on wage)
 ```python
 model.f_test('educ = 0')
 ```
-# 1.2 Example 2: Are educ and exper Both Insignificant?
+1.2 Example 2: Are educ and exper Both Insignificant?
+
 H₀: β₁ = 0, β₂ = 0
 ```python
 model.f_test('educ = 0, exper = 0')
 ```
-# 1.3 Example 3: Is the Effect of educ Equal to That of tenure?
+1.3 Example 3: Is the Effect of educ Equal to That of tenure?
+
 H₀: β₁ = β₃
 ```python
 model.f_test('educ = tenure')
 ```
-# 1.4 Example 4: Do Combined Effects of educ + exper Equal 1?
+1.4 Example 4: Do Combined Effects of educ + exper Equal 1?
+
 H₀: β₁ + β₂ = 1
 ```python
 model.f_test('educ + exper = 1')
@@ -73,7 +77,7 @@ full_model = smf.ols('wage ~ educ + exper + tenure', data=df).fit()
 anova_results = anova_lm(reduced_model, full_model)
 print(anova_results)
 ```
-###  Output Interpretation
+##  Output Interpretation
 
 | **Term**     | **Meaning**                                                        |
 |--------------|---------------------------------------------------------------------|
