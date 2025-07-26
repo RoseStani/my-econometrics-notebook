@@ -107,7 +107,7 @@ Problematic variable 'age' was removed.
 Regression was re-run with reduced multicollinearity, improving model clarity.
 
 ---
-
+Next:[Part 5 – Heteroskedasticity](../part5_heteroskedasticity/README.md)
 
 
 
