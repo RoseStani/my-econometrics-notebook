@@ -15,12 +15,13 @@ This causes:
 ##  How to Detect Heteroskedasticity?
 
 We can inspect heteroskedasticity in **two main ways**:
+(We use both methods together for better reliability)
 
 1. **Visually** – by plotting residuals against fitted values.
 2. **Statistically** – by conducting formal tests like:
    - Breusch-Pagan Test
    - White's Test
-We use both methods together for better reliability 
+
 ---
 
 ## Why is it important to detect and fix it?
