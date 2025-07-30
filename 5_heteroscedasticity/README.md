@@ -20,8 +20,7 @@ We can inspect heteroskedasticity in **two main ways**:
 2. **Statistically** – by conducting formal tests like:
    - Breusch-Pagan Test
    - White's Test
-
-Both methods are used together for a more reliable diagnosis.
+We use both methods together for better reliability 
 ---
 
 ## Why is it important to detect and fix it?
@@ -117,3 +116,7 @@ Changes estimation approach by weighting observations
 ## Summary
 
 Heteroskedasticity refers to a violation of the classical OLS assumption where the variance of the error term is not constant across observations. Using the wage1 dataset, we examined this issue by visually inspecting a residuals vs fitted values plot and conducting formal tests like Breusch-Pagan and White. Though heteroskedasticity does not bias the OLS coefficients, it makes standard errors unreliable, leading to invalid statistical inference. To address it, we applied robust standard errors and Weighted Least Squares (WLS), ensuring more accurate and trustworthy regression results.
+
+---
+
+**Next:** [Part 6 – Autocorrelation](../6_autocorrelation/README.md)
